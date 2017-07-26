@@ -1,0 +1,69 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/danielflynn/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="agnoster"
+
+alias fit="git"
+alias ni="npm install --no-progress"
+alias git="hub"
+alias vim="mvim -v"
+alias vi="mvim -v"
+alias up="cd .. && ls"
+alias c="clear"
+alias gc="git commit -am"
+alias ga="git add ."
+alias gs="git status"
+alias gpo='git pull origin "$(git rev-parse --abbrev-ref HEAD)"'
+alias td='tmux detach'
+alias kclean="find . -name '*.orig' -delete "
+alias 💩="rm -rf ./node_modules && npm cache clean && npm install"
+alias die="(killall node ; killall gulp ; killall grunt ; killall php)"
+alias dc="docker-compose"
+alias 💥="dc stop && dc rm -f && dc build --no-cache"
+alias 🏃="npm start"
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+fpath=(~/.zsh/completions $fpath)
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git node npm tmux tmuxinator brew)
+
+# User configuration
+export GOPATH=$HOME/go
+export PATH="$PATH:$HOME:$GOPATH/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/local/sbin:/sbin:/usr/local/git/bin"
+export LANG=en_US.UTF-8
+
+source $ZSH/oh-my-zsh.sh
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
+
+if [ -n "$INSIDE_EMACS" ]; then
+    export TERM=xterm-256color
+		#follow cd better
+		chpwd() { print -P "\033AnSiTc %d" }
+		print -P "\033AnSiTu %n"
+		print -P "\033AnSiTc %d"
+fi
+
+if [ -f ~/.bash_profile ]; then
+  source ~/.bash_profile
+fi
+
+export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"

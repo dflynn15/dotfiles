@@ -1,0 +1,7 @@
+emacs.d/auto-save-list/
+emacs.d/.cache/
+emacs.d/network-security.data
+emacs.d/elpa/
+emacs.d/eshell/
+emacs.d/projectile-bookmarks/
+emacs.d/projectile-bookmarks.eld

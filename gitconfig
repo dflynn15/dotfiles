@@ -1,0 +1,9 @@
+[alias]
+  co = checkout
+  br = branch
+[user]
+  name = Daniel Flynn
+  email = djflynn15@gmail.com
+	signingkey = 8AAB27522925829E
+[core]
+  editor = mvim -v
