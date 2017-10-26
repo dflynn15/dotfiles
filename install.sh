@@ -9,6 +9,7 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 
 zsh_dir=$dir/zsh
 vim_dir=$dir/vim
+vim_dir=$dir/emacs.d
 
 zsh_files="zprofile zshrc"
 vim_files="vimrc viminfo"
@@ -46,3 +47,8 @@ for file in $vim_files; do
   echo "Creating symlink to $file in home directory."
   ln -s $vim_dir/$file ~/.$file
 done
+
+echo "Moving any existing Emacs dotfiles from ~ to $olddir"
+mv ~/.$emacs_dir $olddir
+echo "Creating symlink to $emacs_dir in home directory."
+ln -s ~/$dir/$emacs_dir ~/.$emacs_dir

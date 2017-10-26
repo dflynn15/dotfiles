@@ -5,12 +5,12 @@ export ZSH=/Users/danielflynn/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME=""
 
 alias fit="git"
 alias ni="npm install --no-progress"
 alias git="hub"
-alias vim="mvim -v"
+# alias vim="mvim -v"
 alias vi="mvim -v"
 alias up="cd .. && ls"
 alias c="clear"
@@ -45,6 +45,8 @@ export PATH="$PATH:$HOME:$GOPATH/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:/usr/l
 export LANG=en_US.UTF-8
 
 source $ZSH/oh-my-zsh.sh
+autoload -U promptinit; promptinit
+prompt pure
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
