@@ -1,7 +1,3 @@
-(require 'escreen)
-
-
-(call-interactively 'escreen-create-screen)
 (use-package escreen
   :ensure t
   :demand t
