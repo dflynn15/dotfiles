@@ -18,7 +18,7 @@ alias gc="git commit -am"
 alias ga="git add ."
 alias gs="git status"
 alias gpo='git pull origin "$(git rev-parse --abbrev-ref HEAD)"'
-alias td='tmux detach'
+#alias td='tmux detach'
 alias kclean="find . -name '*.orig' -delete "
 alias 💩="rm -rf ./node_modules && npm cache clean && npm install"
 alias die="(killall node ; killall gulp ; killall grunt ; killall php)"
@@ -37,7 +37,7 @@ fpath=(~/.zsh/completions $fpath)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git node npm tmux tmuxinator brew)
+plugins=(git node npm brew)
 
 # User configuration
 export GOPATH=$HOME/go

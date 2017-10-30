@@ -30,7 +30,7 @@ if [ "$1" != "--fresh" ]; then
   brew install node
 
   ############# Install ZSH
-  brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
   ############# Install AG
   brew install ag
@@ -40,6 +40,12 @@ if [ "$1" != "--fresh" ]; then
 
   ############ Install Prettier
   npm install --global prettier
+
+  ########### Install Emacs
+  brew install --with-cocoa emacs
+
+  ########## Install VIM
+  brew install macvim
 fi
 
 ########## Copy over dotfiles
@@ -77,4 +83,4 @@ done
 echo "Moving any existing Emacs dotfiles from ~ to $olddir"
 mv ~/.$emacs_dir $olddir
 echo "Creating symlink to $emacs_dir in home directory."
-cd ~ && ln -s ~/$dir/$emacs_dir ~/.$emacs_dir && cd ~/$dir
+cd ~ && ln -s ./$dir/$emacs_dir .$emacs_dir && cd ~/$dir
