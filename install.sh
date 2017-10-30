@@ -22,7 +22,7 @@ vim_files="vimrc viminfo"
 files="gitconfig tmux.conf vim/autocmd.vim vim/bundle.vim vim/functions.vim vim/mappings.vim vim/settings.vim"    # list of files/folders to symlink in homedir
 
 
-if [ "$1" != "--fresh" ]; then
+if [ "$1" == "--fresh" ]; then
   ############## Install Homebrew
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -30,7 +30,7 @@ if [ "$1" != "--fresh" ]; then
   brew install node
 
   ############# Install ZSH
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
   ############# Install AG
   brew install ag
@@ -46,6 +46,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
   ########## Install VIM
   brew install macvim
+
+  ########## Install MongoDB
+  brew install mongodb
 fi
 
 ########## Copy over dotfiles
