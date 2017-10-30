@@ -32,8 +32,14 @@ if [ "$1" != "--fresh" ]; then
   ############# Install ZSH
   brew install zsh
 
+  ############# Install AG
+  brew install ag
+
   ############ Install Pure
   npm install --global pure-prompt
+
+  ############ Install Prettier
+  npm install --global prettier
 fi
 
 ########## Copy over dotfiles

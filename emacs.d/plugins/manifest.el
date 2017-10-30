@@ -8,6 +8,7 @@
 (load "~/.emacs.d/plugins/flycheck.el")
 (load "~/.emacs.d/plugins/helm-projectile.el")
 (load "~/.emacs.d/plugins/helm.el")
+(load "~/.emacs.d/plugins/helm-ag.el")
 (load "~/.emacs.d/plugins/js2-mode.el")
 (load "~/.emacs.d/plugins/json-mode.el")
 (load "~/.emacs.d/plugins/keychord.el")
