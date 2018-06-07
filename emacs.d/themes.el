@@ -2,10 +2,11 @@
 (set-face-attribute 'default nil :height 120)
 
 
-(load-theme 'base16-ocean t)
-(defvar *currenttheme* 'base16-ocean)
+(load-theme 'nord t)
+(defvar *currenttheme* 'nord)
 (defvar *theme-dark* 'base16-ocean)
 (defvar *theme-light* 'base16-tomorrow)
+(defvar *theme-nord* 'nord)
 
 (defun disable-all-themes (&rest args)
   (mapcar #'disable-theme custom-enabled-themes))
@@ -27,10 +28,11 @@
 (defun toggletheme ()
   (interactive)
   (cond ((eq *currenttheme* *theme-dark*) (nexttheme *theme-light*))
-        ((eq *currenttheme* *theme-light*) (nexttheme *theme-dark*))
+        ((eq *currenttheme* *theme-light*) (nexttheme *theme-nord*))
+        ((eq *currenttheme* *theme-nord*) (nexttheme *theme-dark*))
         (t (nexttheme *theme-dark*))))
 
 ; default frame is fullscreen and has no scrollbars
-(setq default-frame-alist '((fullscreen . maximized) (vertical-scroll-bars . nil)))
+(setq default-frame-alist '((fullscreen . fullscreen) (vertical-scroll-bars . nil)))
 
-(global-set-key (kbd "C-c C-t") 'toggletheme)
+(global-set-key (kbd "C-SPC t") 'toggletheme)

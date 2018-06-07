@@ -5,11 +5,11 @@ export ZSH=/Users/danielflynn/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME=""
+#ZSH_THEME=""
 
 alias fit="git"
 alias ni="npm install --no-progress"
-alias git="hub"
+# alias git="hub"
 # alias vim="mvim -v"
 alias vi="mvim -v"
 alias up="cd .. && ls"
@@ -18,13 +18,14 @@ alias gc="git commit -am"
 alias ga="git add ."
 alias gs="git status"
 alias gpo='git pull origin "$(git rev-parse --abbrev-ref HEAD)"'
-#alias td='tmux detach'
 alias kclean="find . -name '*.orig' -delete "
 alias 💩="rm -rf ./node_modules && npm cache clean && npm install"
 alias die="(killall node ; killall gulp ; killall grunt ; killall php)"
 alias dc="docker-compose"
 alias 💥="dc stop && dc rm -f && dc build --no-cache"
 alias 🏃="npm start"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
@@ -37,10 +38,9 @@ fpath=(~/.zsh/completions $fpath)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git node npm brew)
+plugins=(git node npm brew docker)
 
 # User configuration
-export GOPATH=$HOME/go
 export PATH="$PATH:$HOME:$GOPATH/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/local/sbin:/sbin:/usr/local/git/bin"
 export LANG=en_US.UTF-8
 
