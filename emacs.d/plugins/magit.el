@@ -7,3 +7,4 @@
     (setq magit-commit-show-diff nil)
   )
 )
+

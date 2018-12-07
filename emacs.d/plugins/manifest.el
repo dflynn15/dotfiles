@@ -7,6 +7,7 @@
 (load "~/.emacs.d/plugins/magit.el")
 (load "~/.emacs.d/plugins/exec-shell.el")
 (load "~/.emacs.d/plugins/flycheck.el")
+(load "~/.emacs.d/plugins/helm.el")
 (load "~/.emacs.d/plugins/helm-projectile.el")
 (load "~/.emacs.d/plugins/helm-ag.el")
 (load "~/.emacs.d/plugins/js2-mode.el")
@@ -25,3 +26,5 @@
 ;;(load "~/.emacs.d/plugins/rainbow-delimeters.el")
 (load "~/.emacs.d/plugins/nord.el")
 ;; (load "~/.emacs.d/plugins/mocha.el")
+
+(load "~/.emacs.d/plugins/go-mode.el")

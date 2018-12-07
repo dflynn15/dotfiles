@@ -16,14 +16,14 @@
  '(ansi-color-names-vector
    ["#ffffff" "#c82829" "#718c00" "#eab700" "#4271ae" "#8959a8" "#4271ae" "#4d4d4c"])
  '(ansi-term-color-vector
-   [unspecified "#ffffff" "#c82829" "#718c00" "#eab700" "#4271ae" "#8959a8" "#4271ae" "#4d4d4c"])
+   [unspecified "#ffffff" "#c82829" "#718c00" "#eab700" "#4271ae" "#8959a8" "#4271ae" "#4d4d4c"] t)
  '(custom-safe-themes
    (quote
     ("78c1c89192e172436dbf892bd90562bc89e2cc3811b5f9506226e735a953a9c6" default)))
- '(magit-commit-arguments (quote ("--gpg-sign=E79276EF844F9E78")))
+ '(magit-commit-arguments (quote ("--gpg-sign=2CCF6F8921AE8EE7")))
  '(package-selected-packages
    (quote
-    (0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode escreen prettier-js flycheck base16-theme key-chord evil-magit magit helm-projectile evil-leader helm evil))))
+    (go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode escreen prettier-js flycheck base16-theme key-chord evil-magit magit helm-projectile evil-leader helm evil))))
 
 ; Confirm exit
 (setq confirm-kill-emacs 'yes-or-no-p)

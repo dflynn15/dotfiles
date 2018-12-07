@@ -7,3 +7,5 @@
 	signingkey = 421B4557
 [core]
   editor = vim -v
+[secrets]
+	providers = secrets/provider.js

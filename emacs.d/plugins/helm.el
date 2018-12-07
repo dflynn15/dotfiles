@@ -1,6 +1,5 @@
-(use-package helm-config
+(use-package helm
   :ensure t
-  :diminish ""
   :init (progn
     (helm-mode 1)
   )

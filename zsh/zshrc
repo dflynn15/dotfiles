@@ -10,7 +10,7 @@ export ZSH=/Users/danielflynn/.oh-my-zsh
 alias fit="git"
 alias ni="npm install --no-progress"
 # alias git="hub"
-# alias vim="mvim -v"
+alias vim="mvim -v"
 alias vi="mvim -v"
 alias up="cd .. && ls"
 alias c="clear"
@@ -69,3 +69,7 @@ fi
 
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/mongodb@3.6/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/node@10/bin:$PATH"
