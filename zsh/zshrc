@@ -55,14 +55,6 @@ else
   export EDITOR='mvim'
 fi
 
-if [ -n "$INSIDE_EMACS" ]; then
-    export TERM=xterm-256color
-		#follow cd better
-		chpwd() { print -P "\033AnSiTc %d" }
-		print -P "\033AnSiTu %n"
-		print -P "\033AnSiTc %d"
-fi
-
 if [ -f ~/.bash_profile ]; then
   source ~/.bash_profile
 fi
@@ -73,3 +65,4 @@ export PATH="/usr/local/opt/mongodb@3.6/bin:$PATH"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"

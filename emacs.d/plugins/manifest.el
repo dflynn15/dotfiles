@@ -5,7 +5,7 @@
 (load "~/.emacs.d/plugins/evil-leader.el")
 (load "~/.emacs.d/plugins/evil-magit.el")
 (load "~/.emacs.d/plugins/magit.el")
-(load "~/.emacs.d/plugins/exec-shell.el")
+;; (load "~/.emacs.d/plugins/exec-shell.el")
 (load "~/.emacs.d/plugins/flycheck.el")
 (load "~/.emacs.d/plugins/helm.el")
 (load "~/.emacs.d/plugins/helm-projectile.el")
@@ -28,3 +28,4 @@
 ;; (load "~/.emacs.d/plugins/mocha.el")
 
 (load "~/.emacs.d/plugins/go-mode.el")
+(load "~/.emacs.d/plugins/vterm.el")
