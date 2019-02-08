@@ -5,11 +5,10 @@ export ZSH=/Users/danielflynn/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME=""
+ZSH_THEME=""
 
 alias fit="git"
 alias ni="npm install --no-progress"
-# alias git="hub"
 alias vim="mvim -v"
 alias vi="mvim -v"
 alias up="cd .. && ls"
@@ -20,7 +19,7 @@ alias gs="git status"
 alias gpo='git pull origin "$(git rev-parse --abbrev-ref HEAD)"'
 alias kclean="find . -name '*.orig' -delete "
 alias 💩="rm -rf ./node_modules && npm cache clean && npm install"
-alias die="(killall node ; killall gulp ; killall grunt ; killall php)"
+alias die="(killall node ; killall gulp ; killall grunt ; killall php; killall telnet)"
 alias dc="docker-compose"
 alias 💥="dc stop && dc rm -f && dc build --no-cache"
 alias 🏃="npm start"

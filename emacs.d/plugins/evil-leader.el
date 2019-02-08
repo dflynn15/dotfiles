@@ -1,6 +1,6 @@
 (use-package evil-leader
   :ensure t
-  :diminish ""
+  :diminish "😈"
   :init (progn
     (global-evil-leader-mode)
     (evil-leader/set-leader ",")
@@ -27,8 +27,5 @@
 
     ; comment
     (evil-leader/set-key "cc" 'comment-line)
-
-    ; escreen
-    (evil-leader/set-key "s" 'escreen-menu)
   )
 )

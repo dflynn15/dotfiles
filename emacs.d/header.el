@@ -7,7 +7,6 @@
       )
       "  "
       ;(format-time-string "%I:%M %p")
-      (concat "  Current Screen: " (format "%d " (escreen-current-screen-number)))
   ))
 )
 
