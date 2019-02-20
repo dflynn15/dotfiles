@@ -25,3 +25,4 @@
 (load "~/.emacs.d/plugins/visual-fill.el")
 (load "~/.emacs.d/plugins/vterm.el")
 (load "~/.emacs.d/plugins/which-key.el")
+(load "~/.emacs.d/plugins/all-the-icons.el")
