@@ -1,5 +1,6 @@
 ; Set font size. Calculated as 1/10pt
 (set-face-attribute 'default nil :height 120)
+(global-hl-line-mode +1)
 
 
 (load-theme 'base16-eighties t)
