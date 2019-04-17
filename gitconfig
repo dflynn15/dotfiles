@@ -4,7 +4,7 @@
 [user]
   name = Daniel Flynn
   email = djflynn15@gmail.com
-	signingkey = 421B4557
+	signingkey = 2CCF6F8921AE8EE7
 [core]
   editor = vim -v
 [secrets]

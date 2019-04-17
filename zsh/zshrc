@@ -24,6 +24,11 @@ alias dc="docker-compose"
 alias 💥="dc stop && dc rm -f && dc build --no-cache"
 alias 🏃="npm start"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias rs="rails server"
+alias rg="rails g"
+alias b="buffalo"
+alias bp="buffalo plugins"
+
 
 
 # Uncomment the following line to enable command auto-correction.
@@ -37,7 +42,7 @@ fpath=(~/.zsh/completions $fpath)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git node npm brew docker)
+plugins=(git node npm brew docker rails ruby)
 
 # User configuration
 export PATH="$PATH:$HOME:$GOPATH/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/local/sbin:/sbin:/usr/local/git/bin"
@@ -65,3 +70,13 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+
+
+# GO
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# Auto load ruby
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh

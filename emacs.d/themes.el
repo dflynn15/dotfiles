@@ -2,11 +2,11 @@
 (set-face-attribute 'default nil :height 120)
 
 
-(load-theme 'nord t)
-(defvar *currenttheme* 'nord)
+(load-theme 'base16-eighties t)
+(defvar *currenttheme* 'base16-eighties)
 (defvar *theme-dark* 'base16-ocean)
 (defvar *theme-light* 'base16-tomorrow)
-(defvar *theme-nord* 'nord)
+(defvar *theme-alt* 'base16-eighties)
 
 (defun disable-all-themes (&rest args)
   (mapcar #'disable-theme custom-enabled-themes))
@@ -28,11 +28,36 @@
 (defun toggletheme ()
   (interactive)
   (cond ((eq *currenttheme* *theme-dark*) (nexttheme *theme-light*))
-        ((eq *currenttheme* *theme-light*) (nexttheme *theme-nord*))
-        ((eq *currenttheme* *theme-nord*) (nexttheme *theme-dark*))
+        ((eq *currenttheme* *theme-light*) (nexttheme *theme-alt*))
+        ((eq *currenttheme* *theme-alt*) (nexttheme *theme-dark*))
         (t (nexttheme *theme-dark*))))
 
 ; default frame is fullscreen and has no scrollbars
 (setq default-frame-alist '((fullscreen . fullscreen) (vertical-scroll-bars . nil)))
 
+(defun fontup ()
+
+  (set-face-attribute 'default nil :height 120)
+)
+
 (global-set-key (kbd "C-SPC t") 'toggletheme)
+
+(define-globalized-minor-mode 
+    global-text-scale-mode
+    text-scale-mode
+    (lambda () (text-scale-mode 1)))
+
+(defun global-text-scale-adjust (inc) (interactive)
+    (text-scale-set 1)
+    (kill-local-variable 'text-scale-mode-amount)
+    (setq-default text-scale-mode-amount (+ text-scale-mode-amount inc))
+    (global-text-scale-mode 1)
+  )
+
+(global-set-key (kbd "M-+")
+  '(lambda () (interactive) (global-text-scale-adjust 1))
+)
+(global-set-key (kbd "M--")
+  '(lambda () (interactive) (global-text-scale-adjust -1))
+)
+
