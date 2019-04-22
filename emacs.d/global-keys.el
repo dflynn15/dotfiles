@@ -6,6 +6,7 @@
 (global-set-key (kbd "C-SPC w k") 'windmove-up)
 (global-set-key (kbd "C-SPC w s h") (lambda () (interactive) (split-window-vertically) (balance-windows)))
 (global-set-key (kbd "C-SPC w s v") (lambda () (interactive) (split-window-horizontally) (balance-windows)))
+(global-set-key (kbd "C-SPC r") 'chruby-use-corresponding)
 
 (defun flynn-git-clone(url)
   "Clone a Git Project"
