@@ -79,4 +79,4 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"export PATH="/usr/local/opt/ruby/
 
 # Auto load ruby
 source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+source /usr/local/share/chruby/auto.shexport PATH="/usr/local/opt/openssl@1.1/bin:$PATH"

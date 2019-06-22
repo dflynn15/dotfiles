@@ -4,7 +4,9 @@
 [user]
   name = Daniel Flynn
   email = djflynn15@gmail.com
-	signingkey = 2CCF6F8921AE8EE7
+  signingkey = 2CCF6F8921AE8EE7
+[commit]
+  gpgsign=true
 [core]
   editor = vim -v
 [secrets]

@@ -19,7 +19,7 @@
  '(magit-commit-arguments (quote ("--gpg-sign=2CCF6F8921AE8EE7")))
  '(package-selected-packages
    (quote
-    (minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode prettier-js flycheck base16-theme key-chord evil-magit magit helm-projectile evil-leader helm evil)))
+    (minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode prettier-js flycheck base16-theme key-chord helm-projectile evil-leader helm evil)))
  '(safe-local-variable-values
    (quote
     ((projectile-project-run-cmd . "mkdir -p build; cd build; cmake ..; make run")

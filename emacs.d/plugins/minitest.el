@@ -2,6 +2,6 @@
   :ensure t
   :diminish ""
   :init (progn
-    (add-hook 'ruby-mode-hook #'minitest-mode)
+    (add-hook 'ruby-mode-hook 'minitest-mode)
   )
 )

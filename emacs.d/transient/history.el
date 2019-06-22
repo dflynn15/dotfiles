@@ -2,6 +2,7 @@
   ("--3way"))
  (magit-branch nil)
  (magit-commit nil
+               ("--allow-empty")
                ("--signoff"))
  (magit-diff
   ("--no-ext-diff" "--stat"))
@@ -16,8 +17,8 @@
  (magit-patch-apply nil)
  (magit-patch-create nil)
  (magit-pull nil)
- (magit-push nil
-             ("--force-with-lease"))
+ (magit-push
+  ("--force-with-lease"))
  (magit-rebase nil
                ("--interactive"))
  (magit-remote

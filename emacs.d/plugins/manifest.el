@@ -28,8 +28,8 @@
 
 ;; Ruby stuff
 (load "~/.emacs.d/plugins/ruby-mode.el")
-(load "~/.emacs.d/plugins/ruby-end.el")
-(load "~/.emacs.d/plugins/ruby-electric.el")
+;(load "~/.emacs.d/plugins/ruby-end.el")
+;(load "~/.emacs.d/plugins/ruby-electric.el")
 (load "~/.emacs.d/plugins/chruby.el")
 (load "~/.emacs.d/plugins/rubocop.el")
 (load "~/.emacs.d/plugins/minitest.el")
