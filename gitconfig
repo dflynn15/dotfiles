@@ -4,10 +4,12 @@
 [user]
   name = Daniel Flynn
   email = djflynn15@gmail.com
-  signingkey = 2CCF6F8921AE8EE7
+	signingkey = 7336D9A982FD59A1
 [commit]
   gpgsign=true
 [core]
   editor = vim -v
 [secrets]
 	providers = secrets/provider.js
+[gpg]
+	program = gpg

@@ -1,3 +1,4 @@
+ZSH_DISABLE_COMPFIX="true"
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/danielflynn/.oh-my-zsh
 
@@ -7,10 +8,6 @@ export ZSH=/Users/danielflynn/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME=""
 
-alias fit="git"
-alias ni="npm install --no-progress"
-alias vim="mvim -v"
-alias vi="mvim -v"
 alias up="cd .. && ls"
 alias c="clear"
 alias gc="git commit -am"
@@ -28,6 +25,7 @@ alias rs="rails server"
 alias rg="rails g"
 alias b="buffalo"
 alias bp="buffalo plugins"
+alias ls="exa"
 
 
 
@@ -79,4 +77,4 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"export PATH="/usr/local/opt/ruby/
 
 # Auto load ruby
 source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.shexport PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+source /usr/local/share/chruby/auto.sh

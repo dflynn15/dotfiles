@@ -15,12 +15,11 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 
 zsh_dir=$dir/zsh
 vim_dir=$dir/vim
-vim_dir=$dir/emacs.d
+emacs_dir=$dir/emacs.d
 
 zsh_files="zprofile zshrc"
 vim_files="vimrc viminfo"
-files="gitconfig tmux.conf vim/autocmd.vim vim/bundle.vim vim/functions.vim vim/mappings.vim vim/settings.vim"    # list of files/folders to symlink in homedir
-
+files="gitconfig vim"    # list of files/folders to symlink in homedir
 
 if [ "$1" == "--fresh" ]; then
   ############## Install Homebrew
@@ -35,6 +34,12 @@ if [ "$1" == "--fresh" ]; then
   ############# Install AG
   brew install ag
 
+  ############# Install Chruby
+  brew install chruby
+
+  ############# Install Ruby-Install
+  brew install ruby-install
+
   ############ Install Pure
   npm install --global pure-prompt
 
@@ -42,13 +47,32 @@ if [ "$1" == "--fresh" ]; then
   npm install --global prettier
 
   ########### Install Emacs
-  brew install --with-cocoa emacs
+  brew install emacs
 
   ########## Install VIM
   brew install macvim
 
   ########## Install MongoDB
   brew install mongodb
+
+  ######### Install cmake
+  brew install cmake
+
+  ######## Install libtool
+  brew install libtool
+
+  ######## Install libvterm
+  brew install libvterm
+
+  ## Clone libvterm
+  cd ~ && mkdir Projects && cd Projects && git clone https://github.com/akermu/emacs-libvterm.git 
+  cd emmacs-libvterm
+  mkdir -p build
+  cd build
+  cmake ..
+  make
+
+  brew install exa
 fi
 
 ########## Copy over dotfiles
@@ -86,4 +110,4 @@ done
 echo "Moving any existing Emacs dotfiles from ~ to $olddir"
 mv ~/.$emacs_dir $olddir
 echo "Creating symlink to $emacs_dir in home directory."
-cd ~ && ln -s ./$dir/$emacs_dir .$emacs_dir && cd ~/$dir
+cd ~ && ln -s ./$dir/$emacs_dir emacs.d && mv emacs.d .emacs.d && cd $dir

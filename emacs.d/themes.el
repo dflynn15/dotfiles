@@ -1,13 +1,13 @@
 ; Set font size. Calculated as 1/10pt
-(set-face-attribute 'default nil :height 120)
+(set-face-attribute 'default nil :height 140)
 (global-hl-line-mode +1)
 
 
 (load-theme 'base16-eighties t)
-(defvar *currenttheme* 'base16-eighties)
+(defvar *currenttheme* 'base16-oceanicnext)
 (defvar *theme-dark* 'base16-ocean)
 (defvar *theme-light* 'base16-tomorrow)
-(defvar *theme-alt* 'base16-eighties)
+(defvar *theme-alt* 'base16-oceanicnext)
 
 (defun disable-all-themes (&rest args)
   (mapcar #'disable-theme custom-enabled-themes))
