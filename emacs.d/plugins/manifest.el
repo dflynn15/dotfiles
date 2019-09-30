@@ -25,11 +25,15 @@
 (load "~/.emacs.d/plugins/visual-fill.el")
 (load "~/.emacs.d/plugins/vterm.el")
 (load "~/.emacs.d/plugins/which-key.el")
+(load "~/.emacs.d/plugins/zoom-window.el")
 
 ;; Ruby stuff
 (load "~/.emacs.d/plugins/ruby-mode.el")
+(load "~/.emacs.d/plugins/inf-ruby.el")
 ;(load "~/.emacs.d/plugins/ruby-end.el")
 ;(load "~/.emacs.d/plugins/ruby-electric.el")
 (load "~/.emacs.d/plugins/chruby.el")
 (load "~/.emacs.d/plugins/rubocop.el")
-(load "~/.emacs.d/plugins/minitest.el")
+;(load "~/.emacs.d/plugins/minitest.el")
+(load "~/.emacs.d/plugins/rspec-mode.el")
+
