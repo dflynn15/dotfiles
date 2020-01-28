@@ -19,11 +19,12 @@
     ("78c1c89192e172436dbf892bd90562bc89e2cc3811b5f9506226e735a953a9c6" default)))
  '(package-selected-packages
    (quote
-    (zoom-window rspec-mode inf-ruby minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode prettier-js flycheck base16-theme key-chord helm-projectile evil-leader helm evil)))
+    (yafolding zoom-window rspec-mode inf-ruby minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode prettier-js flycheck base16-theme key-chord helm-projectile evil-leader helm evil)))
  '(safe-local-variable-values
    (quote
     ((projectile-project-run-cmd . "mkdir -p build; cd build; cmake ..; make run")
-     (projectile-project-compilation-cmd . "mkdir -p build; cd build; cmake ..; make")))))
+     (projectile-project-compilation-cmd . "mkdir -p build; cd build; cmake ..; make"))))
+ '(zoom-window-mode-line-color "base16-atelier-seaside-light"))
 
 ; Confirm exit
 (setq confirm-kill-emacs 'yes-or-no-p)

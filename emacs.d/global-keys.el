@@ -55,4 +55,4 @@ Version 2017-09-01"
          (message "File path copied: 「%s」" $fpath)
          $fpath )))))
 
-(global-set-key (kbd "C-SPC f p") 'xah-copy-file-path)
+(global-set-key (kbd "C-SPC c p") 'xah-copy-file-path)

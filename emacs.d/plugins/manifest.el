@@ -25,6 +25,7 @@
 (load "~/.emacs.d/plugins/visual-fill.el")
 (load "~/.emacs.d/plugins/vterm.el")
 (load "~/.emacs.d/plugins/which-key.el")
+(load "~/.emacs.d/plugins/yafolding.el")
 (load "~/.emacs.d/plugins/zoom-window.el")
 
 ;; Ruby stuff
