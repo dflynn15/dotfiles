@@ -19,13 +19,15 @@ alias 💩="rm -rf ./node_modules && npm cache clean && npm install"
 alias die="(killall node ; killall gulp ; killall grunt ; killall php; killall telnet)"
 alias dc="docker-compose"
 alias 💥="dc stop && dc rm -f && dc build --no-cache"
-alias 🏃="npm start"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias rs="rails server"
 alias rg="rails g"
 alias b="buffalo"
 alias bp="buffalo plugins"
 alias ls="exa"
+alias be="bundle exec"
+alias bear="bundle exec rake"
+alias hass="ssh -i ~/.ssh/id_rsa root@hassio.local"
 
 
 
@@ -46,6 +48,7 @@ plugins=(git node npm brew docker rails ruby)
 export PATH="$PATH:$HOME:$GOPATH/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/local/sbin:/sbin:/usr/local/git/bin"
 export LANG=en_US.UTF-8
 
+# Pure terminal
 source $ZSH/oh-my-zsh.sh
 autoload -U promptinit; promptinit
 prompt pure
@@ -73,8 +76,13 @@ export PATH="/usr/local/bin:$PATH"
 # GO
 export GOPATH="${HOME}/.go"
 export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
-# Auto load ruby
+# Ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$HOME/.rubies:$PATH"
+
+# Auto load ruby from chruby
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
