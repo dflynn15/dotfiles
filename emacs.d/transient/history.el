@@ -1,18 +1,19 @@
 ((magit-am
   ("--3way"))
  (magit-branch nil)
- (magit-commit nil
-               ("--allow-empty")
-               ("--signoff"))
+ (magit-commit
+  ("--no-verify")
+  nil
+  ("--allow-empty")
+  ("--signoff"))
  (magit-diff
   ("--no-ext-diff" "--stat"))
  (magit-dispatch nil)
  (magit-fetch nil)
  (magit-log
   ("-n256" "--graph" "--decorate"))
- (magit-merge
-  ("--ff-only")
-  nil)
+ (magit-merge nil
+              ("--ff-only"))
  (magit-patch nil)
  (magit-patch-apply nil)
  (magit-patch-create nil)

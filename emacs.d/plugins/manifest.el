@@ -1,6 +1,10 @@
 ;; Use package
 (load "~/.emacs.d/plugins/use-package.el")
+
+;; Completion
 (load "~/.emacs.d/plugins/auto-complete.el")
+(load "~/.emacs.d/plugins/company-mode.el")
+
 ;; Theme loading
 (load "~/.emacs.d/plugins/base16-theme.el")
 (load "~/.emacs.d/plugins/emoji-cheat-sheet-plus.el")
@@ -16,8 +20,10 @@
 ;; Terminal sanity
 (load "~/.emacs.d/plugins/exec-path.el")
 (load "~/.emacs.d/plugins/eyebrowse.el")
-(load "~/.emacs.d/plugins/flycheck.el")
 (load "~/.emacs.d/plugins/vterm.el")
+;; flycheck
+(load "~/.emacs.d/plugins/flycheck.el")
+(load "~/.emacs.d/plugins/flycheck-rust.el")
 ;; Go
 (load "~/.emacs.d/plugins/go-mode.el")
 ;; Helm
@@ -50,5 +56,8 @@
 (load "~/.emacs.d/plugins/chruby.el")
 (load "~/.emacs.d/plugins/rubocop.el")
 ;(load "~/.emacs.d/plugins/minitest.el")
-(load "~/.emacs.d/plugins/rspec-mode.el")
+;; (load "~/.emacs.d/plugins/rspec-mode.el")
 
+;; Rust stuff, order is important
+(load "~/.emacs.d/plugins/rust-mode.el")
+(load "~/.emacs.d/plugins/racer.el")
