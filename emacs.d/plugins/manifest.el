@@ -9,6 +9,10 @@
 (load "~/.emacs.d/plugins/base16-theme.el")
 (load "~/.emacs.d/plugins/emoji-cheat-sheet-plus.el")
 (load "~/.emacs.d/plugins/emojify.el")
+;; Web
+(load "~/.emacs.d/plugins/web-mode.el")
+(load "~/.emacs.d/plugins/emmet-mode.el")
+(load "~/.emacs.d/plugins/company-web.el")
 ;; CSS
 (load "~/.emacs.d/plugins/css-mode.el")
 (load "~/.emacs.d/plugins/diminish.el")
@@ -41,7 +45,7 @@
 ;; Projectile
 (load "~/.emacs.d/plugins/projectile.el")
 ;; Org mode
-(load "~/.emacs.d/plugins/org-mode.el")
+;; (load "~/.emacs.d/plugins/org-mode.el")
 ;; Random
 (load "~/.emacs.d/plugins/visual-fill.el")
 (load "~/.emacs.d/plugins/which-key.el")
