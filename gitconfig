@@ -3,8 +3,8 @@
   br = branch
 [user]
   name = Daniel Flynn
-  email = djflynn15@gmail.com
-	signingkey = 7336D9A982FD59A1
+  email = daniel@testdouble.com
+	signingkey = 3F054676208AD6A8
 [commit]
   gpgsign=true
 [core]
@@ -12,4 +12,4 @@
 [secrets]
 	providers = secrets/provider.js
 [gpg]
-	program = gpg
+	program = gpg2

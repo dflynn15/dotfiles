@@ -34,6 +34,9 @@ if [ "$1" == "--fresh" ]; then
   ############# Install AG
   brew install ag
 
+  ############# Install AG
+  brew install ripgrep
+
   ############# Install Chruby
   brew install chruby
 

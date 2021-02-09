@@ -72,6 +72,9 @@ export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # GO
 export GOPATH="${HOME}/.go"
@@ -86,3 +89,9 @@ export PATH="$HOME/.rubies:$PATH"
 # Auto load ruby from chruby
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+
+
+export LDFLAGS="-L/usr/local/opt/postgresql@12/lib"
+export CPPFLAGS="-I/usr/local/opt/postgresql@12/include"
+export PKG_CONFIG_PATH="/usr/local/opt/postgresql@12/lib/pkgconfig"
+export PATH="/usr/local/opt/postgresql@12/bin:$PATH"

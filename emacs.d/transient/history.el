@@ -3,7 +3,6 @@
  (magit-branch nil)
  (magit-commit
   ("--no-verify")
-  nil
   ("--allow-empty")
   ("--signoff"))
  (magit-diff
@@ -24,5 +23,6 @@
                ("--interactive"))
  (magit-remote
   ("-f"))
+ (magit-remote\.<remote>\.*url "git@gitlab.com:dflynn15/dad-blog.git" "git@github.com:dflynn15/dad-blog.git")
  (magit-reset nil)
  (magit-stash nil))

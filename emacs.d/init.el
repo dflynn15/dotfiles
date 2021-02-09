@@ -1,9 +1,9 @@
 (require 'package)
-;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
-(require 'use-package)
+
+(eval-when-compile
+  (require 'use-package))
 
 ;; Load order is important
 (load "~/.emacs.d/global-keys.el")
@@ -17,15 +17,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   (quote
-    ("78c1c89192e172436dbf892bd90562bc89e2cc3811b5f9506226e735a953a9c6" default)))
+   '("78c1c89192e172436dbf892bd90562bc89e2cc3811b5f9506226e735a953a9c6" default))
  '(package-selected-packages
-   (quote
-    (company-web emmet-mode web-mode company-mode flycheck-rust zoom-window emojify minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode prettier-js flycheck base16-theme key-chord helm-projectile evil-leader helm evil)))
+   '(ruby-electric npm js-mode prettier company-web emmet-mode web-mode company-mode flycheck-rust zoom-window emojify minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode flycheck base16-theme key-chord helm-projectile evil-leader helm evil))
  '(safe-local-variable-values
-   (quote
-    ((projectile-project-run-cmd . "mkdir -p build; cd build; cmake ..; make run")
-     (projectile-project-compilation-cmd . "mkdir -p build; cd build; cmake ..; make"))))
+   '((projectile-project-run-cmd . "mkdir -p build; cd build; cmake ..; make run")
+     (projectile-project-compilation-cmd . "mkdir -p build; cd build; cmake ..; make")))
  '(zoom-window-mode-line-color "base16-atelier-seaside-light"))
 
 ; Confirm exit
