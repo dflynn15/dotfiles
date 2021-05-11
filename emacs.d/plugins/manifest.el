@@ -14,9 +14,9 @@
 (load "~/.emacs.d/plugins/diminish.el")
 
 ;; Evil setup
-(load "~/.emacs.d/plugins/evil-leader.el")
-(load "~/.emacs.d/plugins/evil-magit.el")
 (load "~/.emacs.d/plugins/evil.el")
+(load "~/.emacs.d/plugins/evil-collection.el")
+(load "~/.emacs.d/plugins/evil-leader.el")
 (load "~/.emacs.d/plugins/keychord.el")
 
 ;; Terminal sanity

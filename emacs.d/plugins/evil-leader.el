@@ -1,7 +1,9 @@
 (use-package evil-leader
-  :ensure t
+  :defer 1
   :diminish "😈"
+  :after evil
   :init (progn
+    (setq evil-want-keybinding nil) 
     (global-evil-leader-mode)
     (evil-leader/set-leader ",")
 		(define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)

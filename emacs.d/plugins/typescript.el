@@ -17,7 +17,7 @@
 ;; https://github.com/ananthakumaran/tide
 (use-package tide
   :ensure t
-  :after typescript-mode
+  :after (:all typescript-mode company flycheck)
   :config
   (defun my-tide-setup-hook ()
     ;; configure tide
