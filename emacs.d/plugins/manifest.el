@@ -39,6 +39,7 @@
 (load "~/.emacs.d/plugins/helm.el")
 
 ;; JavaScript stuff
+(load "~/.emacs.d/plugins/js-mode.el")
 (load "~/.emacs.d/plugins/js2-mode.el")
 (load "~/.emacs.d/plugins/json-mode.el")
 (load "~/.emacs.d/plugins/prettier.el")

@@ -18,8 +18,9 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("78c1c89192e172436dbf892bd90562bc89e2cc3811b5f9506226e735a953a9c6" default))
+ '(helm-minibuffer-history-key "M-p")
  '(package-selected-packages
-   '(evil-collection tide typescript-mode helm-rg ruby-electric npm js-mode prettier company-web emmet-mode web-mode company-mode flycheck-rust zoom-window emojify minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode flycheck base16-theme key-chord helm-projectile evil-leader helm evil))
+   '(add-node-modules-path evil-collection tide typescript-mode helm-rg ruby-electric npm js-mode prettier company-web emmet-mode web-mode company-mode flycheck-rust zoom-window emojify minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode flycheck base16-theme key-chord helm-projectile evil-leader helm evil))
  '(safe-local-variable-values
    '((projectile-project-run-cmd . "mkdir -p build; cd build; cmake ..; make run")
      (projectile-project-compilation-cmd . "mkdir -p build; cd build; cmake ..; make")))
@@ -38,6 +39,9 @@
 (setq-default inhibit-startup-screen t)
 (setq-default inhibit-splash-screen t)
 (setq-default truncate-lines 1)
+
+; Auto-complete parens/curly etc
+(electric-pair-mode 1)
 
 ; Default width of 180 chars
 (setq-default fill-column 180)
