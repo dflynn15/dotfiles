@@ -16,7 +16,7 @@
 
     ; helm-projectile
     (evil-leader/set-key "t" 'helm-projectile-find-file)
-    (evil-leader/set-key "ag" 'helm-projectile-ag)
+    (evil-leader/set-key "ag" 'helm-projectile-rg)
 
     ; windows
     (evil-leader/set-key "hs" (lambda () (interactive) (split-window-vertically) (balance-windows)))

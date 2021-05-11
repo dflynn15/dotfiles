@@ -34,6 +34,7 @@
 
 ;; Helm
 (load "~/.emacs.d/plugins/helm-ag.el")
+(load "~/.emacs.d/plugins/helm-rg.el")
 (load "~/.emacs.d/plugins/helm-projectile.el")
 (load "~/.emacs.d/plugins/helm.el")
 
@@ -41,6 +42,7 @@
 (load "~/.emacs.d/plugins/js2-mode.el")
 (load "~/.emacs.d/plugins/json-mode.el")
 (load "~/.emacs.d/plugins/prettier.el")
+(load "~/.emacs.d/plugins/typescript.el")
 ;; Git
 (load "~/.emacs.d/plugins/magit.el")
 
@@ -60,4 +62,4 @@
 (load "~/.emacs.d/plugins/ruby-mode.el")
 (load "~/.emacs.d/plugins/ruby-electric.el")
 (load "~/.emacs.d/plugins/chruby.el")
-(load "~/.emacs.d/plugins/rubocop.el")
+;; (load "~/.emacs.d/plugins/rubocop.el")

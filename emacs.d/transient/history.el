@@ -1,10 +1,10 @@
 ((magit-am
   ("--3way"))
  (magit-branch nil)
- (magit-commit
-  ("--no-verify")
-  ("--allow-empty")
-  ("--signoff"))
+ (magit-commit nil
+               ("--no-verify")
+               ("--allow-empty")
+               ("--signoff"))
  (magit-diff
   ("--no-ext-diff" "--stat"))
  (magit-dispatch nil)
@@ -25,4 +25,5 @@
   ("-f"))
  (magit-remote\.<remote>\.*url "git@gitlab.com:dflynn15/dad-blog.git" "git@github.com:dflynn15/dad-blog.git")
  (magit-reset nil)
- (magit-stash nil))
+ (magit-stash nil)
+ (magit-tag nil))
