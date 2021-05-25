@@ -1,8 +1,5 @@
 (use-package evil-collection
-  :defer 1
-  :after (:all magit evil evil-leader)
+  :after evil
   :ensure t
-  :init (progn
-    (evil-collection-init)
-  )
-)
+  :config
+  (evil-collection-init))

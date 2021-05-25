@@ -1,6 +1,5 @@
 (use-package zoom-window 
   :ensure t
-  :diminish ""
   :init (progn
     (global-set-key (kbd "C-SPC z") 'zoom-window-zoom)
     (evil-leader/set-key "z" 'zoom-window-zoom)

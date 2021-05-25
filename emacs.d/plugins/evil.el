@@ -3,7 +3,10 @@
 (use-package evil
   :ensure t
   :diminish ""
+  :init
+    (setq evil-want-keybinding nil)
   :config (progn
     (evil-mode 1)
+		(define-key evil-normal-state-map (kbd "RET") 'save-buffer)
   )
 )

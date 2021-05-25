@@ -1,24 +1,23 @@
 (use-package evil-leader
-  :defer 1
+  :ensure t
   :diminish "😈"
-  :after evil
   :init (progn
-    (setq evil-want-keybinding nil) 
     (global-evil-leader-mode)
     (evil-leader/set-leader ",")
+  )
+  :config (progn
 		(define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
 		(define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
 		(define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
 		(define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
-		(define-key evil-normal-state-map (kbd "RET") 'save-buffer)
-  )
-  :config (progn
+
     ; helm
-    (evil-leader/set-key "b" 'helm-buffers-list)
+    (evil-leader/set-key "b" 'helm-projectile-switch-to-buffer)
 
     ; helm-projectile
     (evil-leader/set-key "t" 'helm-projectile-find-file)
-    (evil-leader/set-key "ag" 'helm-projectile-rg)
+    (evil-leader/set-key "ag" 'helm-projectile-ag)
+    (evil-leader/set-key "rg" 'helm-projectile-rg)
 
     ; windows
     (evil-leader/set-key "hs" (lambda () (interactive) (split-window-vertically) (balance-windows)))
