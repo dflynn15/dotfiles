@@ -8,10 +8,6 @@
 ;; Theme loading
 (load "~/.emacs.d/plugins/base16-theme.el")
 (load "~/.emacs.d/plugins/emojify.el")
-;; Web
-;; CSS
-(load "~/.emacs.d/plugins/css-mode.el")
-(load "~/.emacs.d/plugins/diminish.el")
 
 ;; Evil setup
 (load "~/.emacs.d/plugins/evil.el")
@@ -29,6 +25,11 @@
 ;; flycheck
 (load "~/.emacs.d/plugins/flycheck.el")
 
+;; Web
+;; CSS
+(load "~/.emacs.d/plugins/css-mode.el")
+(load "~/.emacs.d/plugins/diminish.el")
+
 ;; Go
 (load "~/.emacs.d/plugins/go-mode.el")
 
@@ -43,6 +44,12 @@
 (load "~/.emacs.d/plugins/json-mode.el")
 (load "~/.emacs.d/plugins/prettier.el")
 (load "~/.emacs.d/plugins/typescript.el")
+
+;; Ruby stuff
+(load "~/.emacs.d/plugins/ruby-mode.el")
+(load "~/.emacs.d/plugins/ruby-electric.el")
+(load "~/.emacs.d/plugins/chruby.el")
+
 ;; Git
 (load "~/.emacs.d/plugins/magit.el")
 
@@ -52,13 +59,10 @@
 ;; Projectile
 (load "~/.emacs.d/plugins/projectile.el")
 
+
 ;; Random
 (load "~/.emacs.d/plugins/visual-fill.el")
 (load "~/.emacs.d/plugins/which-key.el")
 (load "~/.emacs.d/plugins/yafolding.el")
 (load "~/.emacs.d/plugins/zoom-window.el")
-
-;; Ruby stuff
-(load "~/.emacs.d/plugins/ruby-mode.el")
-(load "~/.emacs.d/plugins/ruby-electric.el")
-(load "~/.emacs.d/plugins/chruby.el")
+(load "~/.emacs.d/plugins/undo-fu.el")

@@ -1,6 +1,7 @@
 (use-package evil-leader
   :ensure t
   :diminish "😈"
+  :after zoom-window
   :init (progn
     (global-evil-leader-mode)
     (evil-leader/set-leader ",")
@@ -28,5 +29,7 @@
 
     ; comment
     (evil-leader/set-key "cc" 'comment-line)
+
+    (evil-leader/set-key "z" 'zoom-window-zoom)
   )
 )
