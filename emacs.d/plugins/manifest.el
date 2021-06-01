@@ -66,3 +66,8 @@
 (load "~/.emacs.d/plugins/yafolding.el")
 (load "~/.emacs.d/plugins/zoom-window.el")
 (load "~/.emacs.d/plugins/undo-fu.el")
+
+
+;; Org
+(load "~/.emacs.d/plugins/org-mode.el")
+(load "~/.emacs.d/plugins/evil-org.el")

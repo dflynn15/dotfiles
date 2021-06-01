@@ -5,6 +5,7 @@
  (magit-branch nil)
  (magit-commit
   ("--no-verify")
+  nil
   ("--allow-empty")
   ("--signoff"))
  (magit-diff

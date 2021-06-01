@@ -8,6 +8,13 @@
 (global-set-key (kbd "C-SPC w s v") (lambda () (interactive) (split-window-horizontally) (balance-windows)))
 (global-set-key (kbd "C-SPC r") 'chruby-use-corresponding)
 
+(global-set-key (kbd "C-SPC o c") 'org-capture)
+(global-set-key (kbd "C-SPC o t") 'org-todo-list)
+(global-set-key (kbd "C-SPC o a") 'org-agenda)
+(global-set-key (kbd "C-SPC o n") 'org-scratch)
+(global-set-key (kbd "C-SPC o T") 'org-tags-view)
+
+
 (defun flynn-git-clone(url)
   "Clone a Git Project"
   (interactive "xGit URL:")

@@ -13,22 +13,11 @@
   (org-mode)
 )
 
-(defun org-task-capture ()
-  "Capture a task with my default template."
-  (interactive)
-  (org-capture nil "a")
-)
-
 (use-package org
   :if (file-exists-p (concat dropbox-path "org/tasks.txt"))
   :ensure t
   :diminish ""
   :bind (
-    ("C-SPC o c" . org-task-capture)
-    ("C-SPC o t" . org-todo-list)
-    ("C-SPC o a" . org-agenda)
-    ("C-SPC o n" . org-scratch)
-    ("C-SPC o T" . org-tags-view)
   )
   :mode (("\\.txt\\'" . org-mode))
   :config(progn
