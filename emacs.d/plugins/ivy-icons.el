@@ -6,4 +6,14 @@
 
 (use-package ivy-rich
   :ensure t
-  :init (ivy-rich-mode 1))
+  :after all-the-icons-ivy-rich
+  :init
+    (ivy-rich-mode 1)
+    (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
+    :config
+      ivy-rich-modify-column
+        'ivy-switch-buffer
+        'ivy-rich-switch-buffer-major-mode
+        '(:width 20 :face error)
+      )
+)
