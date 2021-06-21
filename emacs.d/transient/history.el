@@ -3,11 +3,10 @@
  (magit-blame
   ("-w"))
  (magit-branch nil)
- (magit-commit
-  ("--no-verify")
-  nil
-  ("--allow-empty")
-  ("--signoff"))
+ (magit-commit nil
+               ("--no-verify")
+               ("--allow-empty")
+               ("--signoff"))
  (magit-diff
   ("--no-ext-diff" "--stat"))
  (magit-dispatch nil)

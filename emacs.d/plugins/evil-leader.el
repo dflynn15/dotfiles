@@ -13,12 +13,12 @@
 		(define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
 
     ; helm
-    (evil-leader/set-key "b" 'helm-projectile-switch-to-buffer)
+    (evil-leader/set-key "b" 'counsel-projectile-switch-to-buffer)
 
     ; helm-projectile
-    (evil-leader/set-key "t" 'helm-projectile-find-file)
-    (evil-leader/set-key "ag" 'helm-projectile-ag)
-    (evil-leader/set-key "rg" 'helm-projectile-rg)
+    (evil-leader/set-key "t" 'counsel-projectile-find-file)
+    (evil-leader/set-key "ag" 'counsel-projectile-ag)
+    (evil-leader/set-key "rg" 'counsel-projectile-rg)
 
     ; windows
     (evil-leader/set-key "hs" (lambda () (interactive) (split-window-vertically) (balance-windows)))

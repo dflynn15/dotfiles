@@ -1,10 +1,10 @@
-;;;; Emacs Bookmark Format Version 1 ;;;;
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/Dropbox (Personal)/org/tasks.txt")
- (front-context-string . "* TODO Find team")
- (rear-context-string . "e 08:59> \n:END:\n")
- (position . 1680))
+ (filename . "~/.notes")
+ (front-context-string . "** TODO \n   [202")
+ (rear-context-string)
+ (position . 9))
 )

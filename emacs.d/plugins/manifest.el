@@ -14,6 +14,7 @@
 (load "~/.emacs.d/plugins/evil-collection.el")
 (load "~/.emacs.d/plugins/evil-leader.el")
 (load "~/.emacs.d/plugins/keychord.el")
+(load "~/.emacs.d/plugins/evil-goggles.el")
 
 ;; Terminal sanity
 (load "~/.emacs.d/plugins/exec-path.el")
@@ -33,10 +34,20 @@
 ;; Go
 (load "~/.emacs.d/plugins/go-mode.el")
 
+;; Ivy + Counsel
+(load "~/.emacs.d/plugins/wgrep.el")
+(load "~/.emacs.d/plugins/counsel.el")
+(load "~/.emacs.d/plugins/ivy-hydra.el")
+(load "~/.emacs.d/plugins/counsel-projectile.el")
+(load "~/.emacs.d/plugins/ivy-posframe.el")
+
+; Ensure this is loaded last for ivy
+(load "~/.emacs.d/plugins/ivy-icons.el")
+
 ;; Helm
-(load "~/.emacs.d/plugins/helm-ag.el")
-(load "~/.emacs.d/plugins/helm-projectile.el")
-(load "~/.emacs.d/plugins/helm.el")
+;(load "~/.emacs.d/plugins/helm-ag.el")
+;(load "~/.emacs.d/plugins/helm-projectile.el")
+;(load "~/.emacs.d/plugins/helm.el")
 
 ;; JavaScript stuff
 (load "~/.emacs.d/plugins/js-mode.el")

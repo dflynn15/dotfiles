@@ -20,7 +20,7 @@
    '("78c1c89192e172436dbf892bd90562bc89e2cc3811b5f9506226e735a953a9c6" default))
  '(helm-minibuffer-history-key "M-p")
  '(package-selected-packages
-   '(undo-fu perspective add-node-modules-path evil-collection tide typescript-mode helm-rg ruby-electric npm js-mode prettier company-web emmet-mode web-mode company-mode flycheck-rust zoom-window emojify minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode flycheck base16-theme key-chord helm-projectile evil-leader helm evil))
+   '(ivy-posframe wgrep ivy-hydra all-the-icons-ivy-rich counsel-projectile counsel ivy evil-goggles undo-fu perspective add-node-modules-path evil-collection tide typescript-mode helm-rg ruby-electric npm js-mode prettier company-web emmet-mode web-mode company-mode flycheck-rust zoom-window emojify minitest chruby rubocopfmt rubocop golint flycheck-plantuml all-the-icons-dired-mode which-key visual-fill-column json-mode diminish all-the-icons-dred eyebrowse swift-mode jst go-mode multishell emoji-cheat-sheet-plus restclient-helm restclient 0xc nord rainbow-delimiters nord-theme prettier-eslint evil-org org-evil org-mode helm-config markdown-mode use-package flow-minor-mode auto-complete exec-path-from-shell helm-ag js2-mode flycheck base16-theme key-chord helm-projectile evil-leader helm evil))
  '(safe-local-variable-values
    '((projectile-project-run-cmd . "mkdir -p build; cd build; cmake ..; make run")
      (projectile-project-compilation-cmd . "mkdir -p build; cd build; cmake ..; make")))
@@ -76,4 +76,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(evil-goggles-change-face ((t (:inherit diff-removed))))
+ '(evil-goggles-delete-face ((t (:inherit diff-removed))))
+ '(evil-goggles-paste-face ((t (:inherit diff-added))))
+ '(evil-goggles-undo-redo-add-face ((t (:inherit diff-added))))
+ '(evil-goggles-undo-redo-change-face ((t (:inherit diff-changed))))
+ '(evil-goggles-undo-redo-remove-face ((t (:inherit diff-removed))))
+ '(evil-goggles-yank-face ((t (:inherit diff-changed)))))
