@@ -22,6 +22,7 @@
 
 ;; Windowing
 (load "~/.emacs.d/plugins/vterm.el")
+(load "~/.emacs.d/plugins/multi-vterm.el")
 
 ;; flycheck
 (load "~/.emacs.d/plugins/flycheck.el")

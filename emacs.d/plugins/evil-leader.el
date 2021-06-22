@@ -17,8 +17,9 @@
 
     ; helm-projectile
     (evil-leader/set-key "t" 'counsel-projectile-find-file)
-    (evil-leader/set-key "ag" 'counsel-projectile-ag)
-    (evil-leader/set-key "rg" 'counsel-projectile-rg)
+    (evil-leader/set-key "s" 'counsel-find-file)
+    (evil-leader/set-key "ag" 'counsel-projectile-rg)
+    (evil-leader/set-key "dg" 'counsel-rg)
 
     ; windows
     (evil-leader/set-key "hs" (lambda () (interactive) (split-window-vertically) (balance-windows)))

@@ -66,16 +66,6 @@ if [ "$1" == "--fresh" ]; then
 
   ######## Install libvterm
   brew install libvterm
-
-  ## Clone libvterm
-  cd ~ && mkdir Projects && cd Projects && git clone https://github.com/akermu/emacs-libvterm.git 
-  cd emmacs-libvterm
-  mkdir -p build
-  cd build
-  cmake ..
-  make
-
-  brew install exa
 fi
 
 ########## Copy over dotfiles
