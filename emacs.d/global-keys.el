@@ -14,6 +14,8 @@
 (global-set-key (kbd "C-SPC o n") 'org-scratch)
 (global-set-key (kbd "C-SPC o T") 'org-tags-view)
 
+(global-set-key (kbd "C-SPC d l") 'display-line-numbers-mode)
+
 
 (defun flynn-git-clone(url)
   "Clone a Git Project"
