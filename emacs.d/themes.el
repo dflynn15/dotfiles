@@ -34,12 +34,8 @@
         (t (nexttheme *theme-dark*))))
 
 ; default frame is fullscreen and has no scrollbars
-(setq default-frame-alist '((fullscreen . fullscreen) (vertical-scroll-bars . nil)))
+;; (setq default-frame-alist '((fullscreen . fullscreen) (vertical-scroll-bars . nil)))
 
-(defun fontup ()
-
-  (set-face-attribute 'default nil :height 120)
-)
 
 (global-set-key (kbd "C-SPC t") 'toggletheme)
 
