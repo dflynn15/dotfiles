@@ -5,6 +5,12 @@ emacs.d/elpa/
 emacs.d/eshell/
 emacs.d/projectile-bookmarks/
 emacs.d/projectile-bookmarks.eld
-emacs.d/elpa/
+emacs.d/elpa
 emacs.d/ac-comphist.dat
-emacs.d/transient/
+emacs.d/transient
+emacs.d/emojis
+emacs.d/bookmarks
+emacs.d/ac-comphist.dat
+emacs.d/eln-cache
+emacs.d/rust-playground
+emacs.d/projectile.cache

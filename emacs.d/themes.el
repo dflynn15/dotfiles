@@ -3,11 +3,17 @@
 (global-hl-line-mode +1)
 
 
-(load-theme 'base16-eighties t)
-(defvar *currenttheme* 'base16-oceanicnext)
-(defvar *theme-dark* 'base16-ocean)
-(defvar *theme-light* 'base16-tomorrow)
-(defvar *theme-alt* 'base16-oceanicnext)
+;; (load-theme 'base16-eighties t)
+;; (defvar *currenttheme* 'base16-oceanicnext)
+;; (defvar *theme-dark* 'base16-ocean)
+;; (defvar *theme-light* 'base16-tomorrow)
+;; (defvar *theme-alt* 'base16-oceanicnext)
+
+(load-theme 'doom-one t)
+(defvar *currenttheme* 'doom-one)
+(defvar *theme-dark* 'doom-horizon)
+(defvar *theme-light* 'doom-flatwhite)
+(defvar *theme-alt* 'doom-nord)
 
 (defun disable-all-themes (&rest args)
   (mapcar #'disable-theme custom-enabled-themes))

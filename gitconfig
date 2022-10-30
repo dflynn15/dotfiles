@@ -3,13 +3,16 @@
   br = branch
 [user]
   name = Daniel Flynn
-  email = daniel@testdouble.com
-	signingkey = 3F054676208AD6A8
+  email = daniel.flynn@gusto.com
+	signingkey = B938F87F1DD9571C
 [commit]
   gpgsign=true
 [core]
   editor = vim -v
-[secrets]
-	providers = secrets/provider.js
+	hooksPath = /Users/daniel.flynn/.gusto/githooks
 [gpg]
 	program = gpg2
+[init]
+	defaultBranch = main
+[credential]
+	helper = osxkeychain

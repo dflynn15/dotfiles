@@ -1,37 +1,7 @@
 ;define global keys
 (global-set-key (kbd "C-SPC") nil)
-(global-set-key (kbd "C-SPC w l") 'windmove-right)
-(global-set-key (kbd "C-SPC w h") 'windmove-left)
-(global-set-key (kbd "C-SPC w j") 'windmove-down)
-(global-set-key (kbd "C-SPC w k") 'windmove-up)
-(global-set-key (kbd "C-SPC w s h") (lambda () (interactive) (split-window-vertically) (balance-windows)))
-(global-set-key (kbd "C-SPC w s v") (lambda () (interactive) (split-window-horizontally) (balance-windows)))
-(global-set-key (kbd "C-SPC r") 'chruby-use-corresponding)
-
-(global-set-key (kbd "C-SPC o c") 'org-capture)
-(global-set-key (kbd "C-SPC o t") 'org-todo-list)
-(global-set-key (kbd "C-SPC o a") 'org-agenda)
-(global-set-key (kbd "C-SPC o n") 'org-scratch)
-(global-set-key (kbd "C-SPC o T") 'org-tags-view)
-
-(global-set-key (kbd "C-SPC d l") 'display-line-numbers-mode)
-
-
-(defun flynn-git-clone(url)
-  "Clone a Git Project"
-  (interactive "xGit URL:")
-  (let
-    (
-      (projectPath (concat "~/github/" (car (split-string (car (last (split-string url "/"))) "\\."))))
-    )
-    (shell-command (concat "git clone " url projectPath))
-    (eyebrowse-create-window-config)
-    (dired (concat projectPath))
-  )
-)
-
-(global-set-key (kbd "C-SPC g c") 'flynn-git-clone)
-
+(global-set-key (kbd "C-SPC l") 'display-line-numbers-mode)
+(global-set-key (kbd "C-SPC p") 'projectile-switch-project)
 
 (defun xah-copy-file-path (&optional @dir-path-only-p)
   "Copy the current buffer's file path or dired path to `kill-ring'.

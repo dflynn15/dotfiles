@@ -3,5 +3,6 @@
   :init
     (projectile-mode +1)
   :config
-    (setq projectile-completion-system 'ivy)
+    (setq projectile-completion-system 'default)
+    (setq projectile-enable-caching t)
 )
