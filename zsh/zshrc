@@ -2,12 +2,6 @@ ZSH_DISABLE_COMPFIX="true"
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/danielflynn/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME=""
-
 alias up="cd .. && ls"
 alias c="clear"
 alias gc="git commit -am"
@@ -24,15 +18,31 @@ alias be="bundle exec"
 alias bear="bundle exec rake"
 alias hass="ssh -i ~/.ssh/id_rsa root@hassio.local"
 
+alias home="cd ~"
+alias root="cd $(git root)"
+alias back="cd -"
+
 # I loathe this package, skip install anywhere it attempts
 export HUSKY=0
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+HOMEBREW_PREFIX="$(brew --prefix)"
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 fpath=(~/.zsh/completions $fpath)
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -44,22 +54,6 @@ plugins=(git node npm brew docker rails ruby)
 export PATH="$PATH:$HOME:$GOPATH/bin:$HOME/.rvm/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/local/sbin:/sbin:/usr/local/git/bin"
 export LANG=en_US.UTF-8
 
-# Pure terminal
-#source $ZSH/oh-my-zsh.sh
-autoload -U promptinit; promptinit
-prompt pure
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
-
-if [ -f ~/.bash_profile ]; then
-  source ~/.bash_profile
-fi
-
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/mongodb@3.6/bin:$PATH"
@@ -67,28 +61,27 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# GO
-export GOPATH="${HOME}/.go"
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 # Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.rubies:$PATH"
 
-# Auto load ruby from chruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+# Chruby
+source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh
+source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh
 
+# Pure terminal
+autoload -U promptinit; promptinit
+prompt pure
 
-export LDFLAGS="-L/usr/local/opt/postgresql@12/lib"
-export CPPFLAGS="-I/usr/local/opt/postgresql@12/include"
-export PKG_CONFIG_PATH="/usr/local/opt/postgresql@12/lib/pkgconfig"
-export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
+# fnm
+eval "$(fnm env --use-on-cd)"
+
+# pnpm
+export PNPM_HOME="/Users/daniel.flynn/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm endexport
+

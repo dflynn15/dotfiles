@@ -1,6 +1,6 @@
-(use-package prettier-js
+(use-package prettier
   :ensure t
   :init (progn
-    (add-hook 'web-mode-hook 'prettier-js-mode)
+    (add-hook 'web-mode-hook 'prettier-mode)
   )
 )

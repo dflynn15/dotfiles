@@ -2,6 +2,7 @@
   :ensure t
   :mode (("\\.js\\'" . web-mode)
 	 ("\\.jsx\\'" .  web-mode)
+	 ("\\.mjs\\'" .  web-mode)
 	 ("\\.ts\\'" . web-mode)
 	 ("\\.tsx\\'" . web-mode)
 	 ("\\.html\\'" . web-mode))

@@ -1,9 +1,6 @@
 ;; Possibly switch to perspective
 (tab-bar-mode 1)
 
-'(tab-bar ((t (:inherit mode-line))))
-
-
 (global-set-key (kbd "C-SPC s c") 'tab-new)
 (global-set-key (kbd "C-SPC s n") 'tab-next)
 (global-set-key (kbd "C-SPC s p") 'tab-previous)
@@ -19,3 +16,5 @@ The default tab-bar name uses the buffer name."
       (projectile-project-name))))
 
 (setq tab-bar-tab-name-function #'my/name-tab-by-project-or-default)
+;(setq tab-bar-)
+
